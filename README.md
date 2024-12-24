@@ -1,0 +1,3 @@
+# Potential Buffer Overflow in Assembly Code
+
+This repository demonstrates a potential buffer overflow vulnerability in a short assembly code snippet.  The code attempts to add 10 to a value stored in memory, but it lacks any bounds checking.  If the memory location pointed to by EBX is too small, this operation will lead to a buffer overflow, causing unpredictable behavior.  A solution is provided that demonstrates how to safely perform the addition with bounds checking.
